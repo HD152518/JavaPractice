@@ -28,9 +28,9 @@ public class Loop {
 		Random rand = new Random();
 		int choice;
 		int power = 100;
-		String[] job = {"마법사", "영주", "기사", "농민"};
-		
-		while(true){
+		String[] job = { "마법사", "영주", "기사", "농민" };
+
+		while (true) {
 			System.out.println("-------------------------");
 			System.out.println("<< 게임 메뉴 >>");
 			System.out.println("1. 공격력 증가");
@@ -40,15 +40,15 @@ public class Loop {
 			System.out.println("-------------------------");
 			System.out.print("메뉴 입력 =>");
 			choice = sc.nextInt();
-			
-			switch(choice){
+
+			switch (choice) {
 			case 1:
-				power+=10;
-				System.out.println("공격력이 증가되었습니다. 현재 공격력 : "+power);
+				power += 10;
+				System.out.println("공격력이 증가되었습니다. 현재 공격력 : " + power);
 				break;
 			case 2:
-				power-=10;
-				System.out.println("공격력이 감소되었습니다. 현재 공격력 : "+power);
+				power -= 10;
+				System.out.println("공격력이 감소되었습니다. 현재 공격력 : " + power);
 				break;
 			case 3:
 				System.out.println(job[rand.nextInt(4)] + "(으)로 설정되어습니다.");
@@ -61,7 +61,5 @@ public class Loop {
 				break;
 			}
 		}
-
 	}
-
 }
