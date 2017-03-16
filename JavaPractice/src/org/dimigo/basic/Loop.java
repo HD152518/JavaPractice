@@ -24,10 +24,10 @@ public class Loop {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner keyboard = new Scanner(System.in);
 		Random rand = new Random();
 		int choice;
-		int power = 100;
+		int attack = 100;
 		String[] job = { "마법사", "영주", "기사", "농민" };
 
 		while (true) {
@@ -39,16 +39,16 @@ public class Loop {
 			System.out.println("9. 종료");
 			System.out.println("-------------------------");
 			System.out.print("메뉴 입력 =>");
-			choice = sc.nextInt();
+			choice = keyboard.nextInt();
 
 			switch (choice) {
 			case 1:
-				power += 10;
-				System.out.println("공격력이 증가되었습니다. 현재 공격력 : " + power);
+				attack += 10;
+				System.out.println("공격력이 증가되었습니다. 현재 공격력 : " + attack);
 				break;
 			case 2:
-				power -= 10;
-				System.out.println("공격력이 감소되었습니다. 현재 공격력 : " + power);
+				attack -= 10;
+				System.out.println("공격력이 감소되었습니다. 현재 공격력 : " + attack);
 				break;
 			case 3:
 				System.out.println(job[rand.nextInt(4)] + "(으)로 설정되어습니다.");
