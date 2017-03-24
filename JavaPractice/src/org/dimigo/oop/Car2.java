@@ -23,9 +23,11 @@ public class Car2 {
 	private int maxSpeed;
 	private int price;
 
+	//Default constructor
 	public Car2() {
 	}
 
+	//five-arguments constructor
 	public Car2(String company, String model, String color, int maxSpeed, int price) {
 		this.company = company;
 		this.model = model;
