@@ -16,12 +16,10 @@ package org.dimigo.oop;
  * @version : 1.0
  */
 public class SnackTest {
-
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Snack snacks[] = {
 				new Snack("새우깡", "농심", 1100, 2),

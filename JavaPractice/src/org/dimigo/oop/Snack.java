@@ -22,7 +22,6 @@ public class Snack {
 	int number;
 	
 	public Snack() {
-		
 	}
 	
 	public Snack(String name, String company, int price, int number) {
