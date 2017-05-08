@@ -75,7 +75,8 @@ public class Operator {
 		System.out.println(grade + ban + school + name);
 		
 		// 문제) 25디미고나자바를 출력하려면?
-		System.out.println(grade + (ban + school + name));
+		System.out.println("" + grade + ban + school + name);
+		System.out.println(grade + (ban + school) + name);
 	}
 
 }

@@ -39,6 +39,6 @@ public class Question {
 		
 		for(int i=0;i<3;i++)
 			System.out.println(
-					new StringBuilder(questions[i]).append(answers[i]).append("입니다."));
+					new StringBuilder(questions[i]).append(answers[i]).append("입니다.").toString());
 	}
 }

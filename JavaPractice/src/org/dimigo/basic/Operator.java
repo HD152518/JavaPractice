@@ -34,5 +34,4 @@ public class Operator {
 		System.out.println("");
 		System.out.println("연간 인건비 : "+String.format("%,d", result)+"원");
 	}
-
 }
