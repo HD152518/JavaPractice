@@ -22,8 +22,13 @@ public class MovieTest {
 				new Movie("가디언즈 오브 갤럭시",12)
 		};
 		int age=13;
+		
 		for(Movie movie : movies) {
-			movie.buyTicket(age);
+			try{
+				movie.buyTicket(age);
+			} catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
 		}
 	}
 }
